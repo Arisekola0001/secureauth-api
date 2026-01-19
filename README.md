@@ -65,6 +65,33 @@ PATCH http://localhost:5001/api/v1/admin/users/<USER_ID>/role
 
 
 
+
+
+authentication flow and authorisation 
+users register and logs in 
+ server issues JWT access and refresh token
+  clients sends access token in request headerd
+   middleware verifies token and user role
+   access is granted or denied based on the permissions 
+
+
+ testing
+ all endpoints were tested using POSTMAN
+    protected and admin only routes are validated
+
+WHAT THIS PROJECT DEMONSTRATES 
+secure authenticstion practices
+role based authorisation 
+middleware access control
+clean backend architecture 
+production minded API design
+
+
+
+AUTHOR
+ARISEKOLA KUSAMOTU
+(BACKEND ENGINEERING )NODE.js
+
 NOTE:
 
 All protected routes require a valid JWT access token
